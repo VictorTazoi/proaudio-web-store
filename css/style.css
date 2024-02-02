@@ -149,7 +149,6 @@
     padding: 2em;
 }
 #logoFooter{
-    padding-left: 0.1em;
     width: 80%;
 }
 #textoLogoFooter{
@@ -160,6 +159,7 @@
 .colunaFooter{
     color: #ffffffaa;
     text-align: left;
+    text-align: center;
 }
 
 .tituloFooter{

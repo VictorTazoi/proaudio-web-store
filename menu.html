@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ProAudio | Menu</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/menu.css">
+    </head>
+    <body id="bodyConteiner">
+        <nav class="navbar navbar-expand-lg navbar-dark" id="navbarConteiner"> <!-- Background e formatação em css/style.css-->
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img id="logoNavbar"> <!-- A img da logo é atribuida na variável 'logoNavbar' em js/index.js -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="conteinerLinks"> <!-- Formatação em css/style.css -->
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" id="navbarLinks" href="#">All products</a> <!-- Formatação em js/index.js -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" id="navbarLinks" href="#">Contact</a> <!-- Formatação em js/index.js -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" id="navbarLinks" href="#">About us</a> <!-- Formatação em js/index.js -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="conteudo01">
+            <div class="conteudo01Conteiner">
+                    <div class="row">
+                        <div class="col-sm-2 conteinerFiltro">
+                            <div class="card conteinerCardFiltro">
+                                <div class="card-body">
+                                    <p class="optionsTitulo">Options</p>
+                                    <hr>
+                                    <span class="optionsTipoFiltro">Type</span>
+                                    <br>
+                                    <label class="selectFiltro"><input type="radio" id="allOption" name="typeOption" checked="checked">All</label>
+                                    <br>
+                                    <label class="selectFiltro"><input type="radio" id="headphonesOption" name="typeOption">Headphones</label>
+                                    <br>
+                                    <label class="selectFiltro"><input type="radio" id="twsOption" name="typeOption">Earbuds</label>
+                                    <br>
+                                    <label class="selectFiltro"><input type="radio" id="speakersOption" name="typeOption">Speakers</label>
+                                    <br>
+                                    <label class="selectFiltro"><input type="radio" id="homeTheaterOption" name="typeOption">Home Theater</label>
+                                    
+                                    <br><br>
+
+                                    <span class="optionsTipoFiltro">Features</span>
+                                    <br>
+                                    <label class="selectFiltro"><input type="radio" id="allFeature" name="featuresOption" checked="checked">All</label>
+                                    <br>
+                                    <label class="selectFiltro"><input type="radio" id="noiseCancellationFeature" name="featuresOption">Noise Cancellation</label>
+                                    <br>
+                                    <label class="selectFiltro"><input type="radio" id="hiResAudioFeature" name="featuresOption">Hi-Res Audio</label>
+                                    <br>
+                                    <label class="selectFiltro"><input type="radio" id="dualDeviceConnectionFeature" name="featuresOption">Dual-Device Connection</label>
+                                    <br>
+                                    <label class="selectFiltro"><input type="radio" id="wirelessChargingFeature" name="featuresOption">Wireless Charging</label>
+
+                                    <hr>
+                                    <div class="conteinerSubmitFiltro">
+                                        <button type="submit" id="submitFiltro">Search</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-10 conteinerCatalogo">
+                            <div class="card conteinerCardCatalogo">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <script src="js/menu.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

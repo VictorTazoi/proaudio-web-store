@@ -1,0 +1,108 @@
+:root{
+    --bg-dark01: #00000080;
+}
+
+
+#bodyConteiner{
+    background-image: image-set('../midia/fundo-equipamentos-audio.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #000;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+#navbarConteiner{
+    background-color: var(--bg-dark01);
+}
+
+#logoNavbar{
+    padding-left: 0.1em;
+    height: 1.5em;
+}
+
+#navbarSupportedContent{
+    text-align: right;
+}
+
+
+#conteinerLinks{
+    padding-left: 0.3em;
+}
+#navbarLinks{
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+    text-align: center;
+}
+#navbarLinks:hover{
+    border-radius: 0.5em;
+}
+/* Formatação especial para mobile */
+.navbarLinksMOBILE{
+    padding-top: 1.5em;
+}
+
+/* CONTEUDO 01 */
+.conteudo01Conteiner{
+    background-color: var(--bg-dark01);
+    padding-right: 3em;
+    padding-left: 3em;
+}
+
+.conteinerFiltro{
+    padding-top: 3em;
+}
+
+.conteinerCardFiltro{
+    background-color: #D0D0D0;
+}
+
+.conteinerCatalogo{
+    padding-top: 3em;
+}
+
+.conteinerCardCatalogo{
+    background-color: #D0D0D0;
+    padding-top: 3em;
+}
+
+.optionsTitulo{
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.optionsTipoFiltro{
+    font-size: 1em;
+    font-weight: bold;
+    text-align: left;
+}
+
+.selectFiltro{
+    font-size: 0.9em;
+    font-weight: normal;
+    text-align: left;
+    align-items: center;
+    width: 100%;
+}
+
+.conteinerSubmitFiltro{
+    text-align: center;
+}
+#submitFiltro{
+    text-align: center;
+    border-radius: 0.5em;
+    border-width: 0em;
+    background-color: var(--bg-dark01);
+    color: #fff;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    transition: 0.25s;
+}
+#submitFiltro:hover{
+    background-color: #000;
+}

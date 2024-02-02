@@ -6,7 +6,7 @@ const logoNavbar = document.getElementById('logoNavbar');
 logoNavbar.src = "midia/full-logo.png";
 
 if(isMobile){
-    const navbarLinks = document.getElementById('navbarLinks')
+    const navbarLinks = document.getElementById('navbarLinks');
     navbarLinks.classList.add('navbarLinksMOBILE');
 }
 
@@ -26,10 +26,10 @@ imgAnuncio02.src = "midia/anuncio02.png";
 const imgAnuncio03 = document.getElementById('imgAnuncio03');
 imgAnuncio03.src = "midia/anuncio03.png";
 
-//CONTEUDO 03 CATEGORIA 01
+// CONTEUDO 03 CATEGORIA 01
 const conteudo03Imagem01 = document.getElementById('conteudo03Imagem01');
 conteudo03Imagem01.src = "midia/tws-in-ear-headphones-01.png";
 
-//CONTEUDO 03 CATEGORIA 02
+// CONTEUDO 03 CATEGORIA 02
 const conteudo03Imagem02 = document.getElementById('conteudo03Imagem02');
 conteudo03Imagem02.src = "midia/tws-in-ear-headphones-01.png";
