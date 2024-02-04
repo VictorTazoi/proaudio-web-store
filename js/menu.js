@@ -10,24 +10,123 @@ if(isMobile){
     navbarLinks.classList.add('navbarLinksMOBILE');
 }
 
+// LISTAGEM PRODUTOS 
 
 
-let submitFiltro = document.getElementById('submitFiltro');
 
-submitFiltro.onclick = function(){
-    if(myCheckBox.checked){
-        subResult.textContent = `You are subscrided!`
-    }else{
-        subResult.textContent = `You are not subscrided!`
+const produtos = [
+    {
+        id: 0,
+        name: 'JBL',
+        description: 'A resume about the product',
+        amount: 0,
+        price: '99.9 USD',
+        image: 'midia/headphone-03.jpg'
+    },
+    {
+        id: 1,
+        name: 'Product 02',
+        description: 'A resume about the product',
+        amount: 0,
+        price: '199.9 USD',
+        image: 'midia/headphone-03.jpg'
+    },
+    {
+        id: 2,
+        name: 'Product 03',
+        description: 'A resume about the product',
+        amount: 0,
+        price: '499.9 USD',
+        image: 'midia/headphone-03.jpg'
+    },
+    {
+        id: 3,
+        name: 'Product 04',
+        description: 'A resume about the product',
+        amount: 0,
+        price: '499.9 USD',
+        image: 'midia/headphone-03.jpg'
+    },
+    {
+        id: 4,
+        name: 'Product 05',
+        description: 'A resume about the product',
+        amount: 0,
+        price: '499.9 USD',
+        image: 'midia/headphone-03.jpg'
+    },
+    {
+        id: 5,
+        name: 'Product 06',
+        description: 'A resume about the product',
+        amount: 0,
+        price: '499.9 USD',
+        image: 'midia/headphone-03.jpg'
+    },
+    {
+        id: 6,
+        name: 'Product 07',
+        description: 'A resume about the product',
+        amount: 0,
+        price: '499.9 USD',
+        image: 'midia/headphone-03.jpg'
+    },
+    {
+        id: 7,
+        name: 'Product 08',
+        description: 'A resume about the product',
+        amount: 0,
+        price: '499.9 USD',
+        image: 'midia/headphone-03.jpg'
     }
+]
 
-    if(visaBtn.checked){
-        paymentResult.textContent = `You are paying with Visa`
-    }else if(mastercardBtn.checked){
-        paymentResult.textContent = `You are paying with Mastercard`
-    }else if(payPalBtn.checked){
-        paymentResult.textContent = `You are paying with Paypal`
-    }else{
-        paymentResult.textContent = `You must select a payment option`
-    }
+//LISTAGEM
+function listagemProdutos(){
+    var conteinerProdutos = document.getElementById('conteinerProdutos');
+    produtos.map((val)=>{
+        conteinerProdutos.innerHTML += `
+            <div class="col-sm-3 cardProduto">
+                <img class="imagemProduto" src="`+val.image+`"/>
+                <p class="tituloProduto">`+val.name+`</p>
+                <p class="descricaoProduto">`+val.description+`</p>
+                <p class="precoProduto">`+val.price+`</p>
+                <div class="conteinerBotaoCarrinho">
+                    <button class="btn btn-outline-dark carrinhoProduto" key="`+val.id+`" href="">Add to cart</button>
+                </div>
+            </div>
+        `;
+    })
+}
+
+listagemProdutos();
+
+
+function atualizarCarrinho(){
+    var conteinerCarrinho = document.getElementById('conteinerCarrinho');
+    var showCart = document.getElementById('showCart');
+    showCart.innerHTML = 'Cart';
+    conteinerCarrinho.innerHTML = '';
+    produtos.map((val)=>{
+        if(val.amount > 0){
+            conteinerCarrinho.innerHTML += `
+            <div class="col-sm-3 cardCarrinho">
+                <p class="tituloCarrinho">`+val.name+`</p>
+                <p class="precoCarrinho">`+val.price+`</p>
+                <p class="quantidadeCarringo">Amount: `+val.amount+`</p>
+            </div>
+        `;
+        }
+    })
+}
+
+var links = document.getElementsByClassName('carrinhoProduto');
+
+for(var i = 0; i < links.length; i++){
+    links[i].addEventListener("click", function(){
+        let key = this.getAttribute('key');
+        produtos[key].amount++;
+        atualizarCarrinho();
+        return false;
+    })
 }

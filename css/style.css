@@ -51,11 +51,30 @@
     padding-top: 15em;
     padding-bottom: 14em;
     text-align: center;
+    background-color: var(--bg-dark01);
 }
 #conteudo01Subtitulo{
     color: #ffffff8e;
+    padding-bottom: 0.5em;
 }
-
+#conteudo01Botao{
+    border-color: #ffffff8e;
+    border-width: 0.1em;
+    background-color: #00000000;
+    color: #ffffff8e;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 1em;
+    padding-left: 1em;
+    border-radius: 1.5em;
+    box-shadow: none;
+    transition: 0.25s;
+}
+#conteudo01Botao:hover{
+    border-color: #fff;
+    background-color: #00000080;
+    color: #fff;
+}
 
 
 /* HR DIVISOR DE CONTEUDOS */
@@ -65,6 +84,7 @@
     width: 80%;
     border-width: 0.15em;
     border-color: #ffffff;
+    background-color: var(--bg-dark01);
 }
 
 
@@ -72,6 +92,7 @@
 /* CONTEUDO 02 */
 #conteudo02{
     padding-bottom: 2em;
+    background-color: var(--bg-dark01);
 }
 #conteudo02Conteiner{
     padding-left: 2em;
@@ -80,6 +101,12 @@
 
 .blocoConteudo02{
     padding-top: 1em;
+    padding-bottom: 1em;
+    transition: 0.1s;
+}
+
+.blocoConteudo02:hover{
+    padding-top: 0em;   
 }
 
 .conteudo02Card{
@@ -115,7 +142,7 @@
 #conteudo03{
     padding: 2em;
     padding-bottom: 4em;
-    
+    background-color: var(--bg-dark01);
 }
 .tituloConteiner{
     padding-bottom: 0.5em;
@@ -127,12 +154,19 @@
 }
 .blocoConteudo03{
     padding-top: 2em;
+    transition: 0.1s;
 }
+.blocoConteudo03:hover{
+    padding: 0em;
+}
+
 .conteudo03Card{
     padding: 0.5em;
     background-color:  var(--bg-dark01);
     border-radius: 3em;
 }
+
+
 .categoriaImagem{
     border-radius: 2.5em;
 }
@@ -145,7 +179,7 @@
 
 /* FOOTER */
 .footerConteiner{
-    background-color: var(--bg-dark01);
+    background-color: #000;
     padding: 2em;
 }
 #logoFooter{
