@@ -31,95 +31,101 @@
                         </li>
                     </ul>
                     
-                    <form class="d-flex btn btn-outline-light" role="search" id="botaoCarrinho" onmouseenter="mouseEnterCarrinho()" onmouseleave="mouseLeaveCarrinho()">
+                    <button class="d-flex btn btn-outline-light" id="botaoCarrinho" onmouseenter="mouseEnterCarrinho()" onmouseleave="mouseLeaveCarrinho()" onclick="onClickCarrinho()">
                         <img id="navbarLogoCarrinho">
-                        <a id="textoCarrinho" href="cart.html">Go to cart</a>
-                    </form>
+                        <a id="textoCarrinho">Go to cart</a>
+                    </button>
                 </div>
             </div>
         </nav>
 
         <div class="conteudo01">
             <div class="conteudo01Conteiner">
-                    <div class="row rowConteudo01">
-                        <div class="col-sm-2 conteinerFiltro">
-                            <div class="card conteinerCardFiltro">
-                                <div class="card-body">
-                                    <p class="optionsTitulo">Options</p>
-                                    <hr>
-                                    <span class="optionsTipoFiltro">Type</span>
-                                    <br>
-                                    <label class="selectFiltro">
-                                        <input class="botaoRadio" type="radio" id="allOption" name="typeOption" checked="checked">
-                                        <a class="textoBotaoRadio">All</a>
-                                    </label>
-                                    <br>
-                                    <label class="selectFiltro">
-                                        <input class="botaoRadio" type="radio" id="headphonesOption" name="typeOption">
-                                        <a class="textoBotaoRadio">Headphones</a>
-                                    </label>
-                                    <br>
-                                    <label class="selectFiltro">
-                                        <input class="botaoRadio" type="radio" id="twsOption" name="typeOption">
-                                        <a class="textoBotaoRadio">Earbuds</a>
-                                    </label>
-                                    <br>
-                                    <label class="selectFiltro">
-                                        <input class="botaoRadio" type="radio" id="speakersOption" name="typeOption">
-                                        <a class="textoBotaoRadio">Speakers</a>
-                                    </label>
-                                    <br>
-                                    <label class="selectFiltro">
-                                        <input class="botaoRadio" type="radio" id="homeTheaterOption" name="typeOption">
-                                        <a class="textoBotaoRadio">Home Theater</a>
-                                    </label>
-                                    
-                                    <br>
-                                    <br>
+                <div class="row rowConteudo01">
+                    <div class="col-sm-2 conteinerFiltro">
+                        <div class="card conteinerCardFiltro">
+                            <div class="card-body">
+                                <p class="optionsTitulo">Options</p>
+                                <hr>
+                                <span class="optionsTipoFiltro">Type</span>
+                                <br>
+                                <label class="selectFiltro">
+                                    <input class="botaoRadio" type="radio" id="allOption" name="typeOption" checked="checked">
+                                    <a class="textoBotaoRadio">All</a>
+                                </label>
+                                <br>
+                                <label class="selectFiltro">
+                                    <input class="botaoRadio" type="radio" id="headphonesOption" name="typeOption">
+                                    <a class="textoBotaoRadio">Headphones</a>
+                                </label>
+                                <br>
+                                <label class="selectFiltro">
+                                    <input class="botaoRadio" type="radio" id="twsOption" name="typeOption">
+                                    <a class="textoBotaoRadio">Earbuds</a>
+                                </label>
+                                <br>
+                                <label class="selectFiltro">
+                                    <input class="botaoRadio" type="radio" id="speakersOption" name="typeOption">
+                                    <a class="textoBotaoRadio">Speakers</a>
+                                </label>
+                                <br>
+                                <label class="selectFiltro">
+                                    <input class="botaoRadio" type="radio" id="homeTheaterOption" name="typeOption">
+                                    <a class="textoBotaoRadio">Home Theater</a>
+                                </label>
+                                
+                                <br>
+                                <br>
 
-                                    <span class="optionsTipoFiltro">Features</span>
-                                    <br>
-                                    <label class="selectFiltro">
-                                        <input class="botaoRadio" type="radio" id="allFeature" name="featuresOption" checked="checked">
-                                        <a class="textoBotaoRadio">All</a>
-                                    </label>
-                                    <br>
-                                    <label class="selectFiltro">
-                                        <input class="botaoRadio" type="radio" id="noiseCancellationFeature" name="featuresOption">
-                                        <a class="textoBotaoRadio">Noise Cancellation</a>
-                                    </label>
-                                    <br>
-                                    <label class="selectFiltro">
-                                        <input class="botaoRadio" type="radio" id="hiResAudioFeature" name="featuresOption">
-                                        <a class="textoBotaoRadio">Hi-Res Audio</a>
-                                    </label>
-                                    <br>
-                                    <label class="selectFiltro">
-                                        <input class="botaoRadio" type="radio" id="dualDeviceConnectionFeature" name="featuresOption">
-                                        <a class="textoBotaoRadio">Dual-Device Connection</a>
-                                    </label>
-                                    <br>
-                                    <label class="selectFiltro">
-                                        <input class="botaoRadio" type="radio" id="wirelessChargingFeature" name="featuresOption">
-                                        <a class="textoBotaoRadio">Wireless Charging</a>
-                                    </label>
+                                <span class="optionsTipoFiltro">Features</span>
+                                <br>
+                                <label class="selectFiltro">
+                                    <input class="botaoRadio" type="radio" id="allFeature" name="featuresOption" checked="checked">
+                                    <a class="textoBotaoRadio">All</a>
+                                </label>
+                                <br>
+                                <label class="selectFiltro">
+                                    <input class="botaoRadio" type="radio" id="noiseCancellationFeature" name="featuresOption">
+                                    <a class="textoBotaoRadio">Noise Cancellation</a>
+                                </label>
+                                <br>
+                                <label class="selectFiltro">
+                                    <input class="botaoRadio" type="radio" id="hiResAudioFeature" name="featuresOption">
+                                    <a class="textoBotaoRadio">Hi-Res Audio</a>
+                                </label>
+                                <br>
+                                <label class="selectFiltro">
+                                    <input class="botaoRadio" type="radio" id="dualDeviceConnectionFeature" name="featuresOption">
+                                    <a class="textoBotaoRadio">Dual-Device Connection</a>
+                                </label>
+                                <br>
+                                <label class="selectFiltro">
+                                    <input class="botaoRadio" type="radio" id="wirelessChargingFeature" name="featuresOption">
+                                    <a class="textoBotaoRadio">Wireless Charging</a>
+                                </label>
 
-                                    <hr>
-                                    <div class="conteinerSubmitFiltro">
-                                        <button type="submit" id="submitFiltro">Search</button>
-                                    </div>
+                                <hr>
+                                <div class="conteinerSubmitFiltro">
+                                    <button type="submit" id="submitFiltro">Search</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-10 conteinerCatalogo">
-                            <p class="conteudo01Titulo">Products</p>
-                            <div class="listagemProdutos" id="conteinerProdutos">
-                            </div>
-                            <p class="conteudo01Titulo" id="showCart"></p>
-                            <div class="card conteinerCardCarrinho" id="conteinerCarrinho" onclick="showCart()">
-                            </div>
+                    </div>
+                    <div class="col-sm-10 conteinerCatalogo">
+                        <p class="conteudo01Titulo">Products</p>
+                        <div class="listagemProdutos" id="conteinerProdutos">
                         </div>
                     </div>
+                </div>
+                <hr class="hrDivisao">
+                <!-- CARRINHO -->
+                <div class="row">
+                    <div class="col-sm-10 conteinerCarrinho">
+                        <p class="conteudo01Titulo" id="showCart"></p>
+                        <div class="card conteinerCardCarrinho" id="conteinerCarrinho" onclick="showCart()">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
