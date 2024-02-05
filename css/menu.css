@@ -39,6 +39,16 @@
 #navbarLinks:hover{
     border-radius: 0.5em;
 }
+#navbarLogoCarrinho{
+    padding: 0.1em;
+    height: 2.5em;
+}
+#textoCarrinho{
+    font-size: 1.2em;
+    margin: auto;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
 /* Formatação especial para mobile */
 .navbarLinksMOBILE{
     padding-top: 1.5em;
