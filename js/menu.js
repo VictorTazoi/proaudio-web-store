@@ -10,10 +10,21 @@ if(isMobile){
     navbarLinks.classList.add('navbarLinksMOBILE');
 }
 
+//CARRINHO
+var navbarLogoCarrinho = document.getElementById('navbarLogoCarrinho');
+var textoCarrinho = document.getElementById('textoCarrinho');
+navbarLogoCarrinho.src = "../midia/icons/icon-carrinho-96-white.png";
+
+function mouseLeaveCarrinho(){
+    navbarLogoCarrinho.src = "../midia/icons/icon-carrinho-96-white.png";
+    textoCarrinho.style.color = 'white';
+}
+function mouseEnterCarrinho(){
+    navbarLogoCarrinho.src = "../midia/icons/icon-carrinho-96-black.png";
+    textoCarrinho.style.color = 'black';
+}
+
 // LISTAGEM PRODUTOS 
-
-
-
 const produtos = [
     {
         id: 0,
