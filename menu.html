@@ -6,6 +6,8 @@
         <title>ProAudio | Menu</title>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/menu.css">
+        <script type="text/javascript" src="js/modulos.js"></script>
+        <link rel="stylesheet" href="css/modulos.css">
     </head>
     <body id="bodyConteiner">
         <nav class="navbar navbar-expand-lg navbar-dark" id="navbarConteiner"> <!-- Background e formatação em css/style.css-->
@@ -86,29 +88,13 @@
             </div>
         </div>
 
-        <div class="footerConteiner">
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-sm-3">
-                        <img src="midia/full-logo.png" id="logoFooter">
-                        <h6 id="textoLogoFooter">life is better with music.</h6>
-                    </div>
-                    <div class="col-sm-3 colunaFooter">
-                        <h6 class="tituloFooter">Products</h6>
-                        <a class="linksFooter">Redirect</a>
-                    </div>
-                    <div class="col-sm-3 colunaFooter">
-                        <h6 class="tituloFooter">Contact</h6>
-                        <a class="linksFooter">Redirect</a>
-                    </div>
-                    <div class="col-sm-3 colunaFooter">
-                        <h6 class="tituloFooter">About us</h6>
-                        <a class="linksFooter">Redirect</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- FOOTER -->
+        <div class="footerConteiner" id="footer"></div><!-- footer -->
 
+        <script>
+            var footer = componentes.footer; //Coleta a variável "footerPagina" do array "modulosPredefinidos"
+            document.getElementById('footer').innerHTML = footer; //Faz a indentação da variável JS "footerPagina" á tag HTML com o id "footerPagina"
+        </script>
         <script src="js/menu.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
     </body>
