@@ -35,9 +35,10 @@
     padding-left: 0.7em;
     padding-right: 0.7em;
     text-align: center;
+    transition: 0.25s;
 }
 #navbarLinks:hover{
-    border-radius: 0.5em;
+    color: #fff;
 }
 /* Formatação especial para mobile */
 .navbarLinksMOBILE{
@@ -116,7 +117,7 @@
 }
 .conteudo02Titulo{
     padding-bottom: 0.5em;
-    color: #ffffffaa;
+    color: #fff;
     font-size: 1.8em;
     font-family: Arial;
     font-weight: bold;
@@ -146,7 +147,7 @@
 }
 .tituloConteiner{
     padding-bottom: 0.5em;
-    color: #ffffffaa;
+    color: #fff;
     font-size: 1.8em;
     font-family: Arial;
     font-weight: bold;
@@ -171,7 +172,7 @@
     border-radius: 2.5em;
 }
 .categoriaTitulo{
-    color: #fff;
+    color: #DBDADB;
     text-align: center;
     padding-top: 0.8em;
 }
@@ -194,12 +195,28 @@
     color: #ffffffaa;
     text-align: left;
     text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.hrColunaFooter{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.1em;
+}
+
+#logoFooter{
+    padding-top: 1em;
 }
 
 .tituloFooter{
     font-family: Arial;
     font-size: 1.2em;
     font-weight: bold;
+    color: #fff;
 }
 .linksFooter{
     font-family: Arial;
@@ -207,4 +224,9 @@
     font-weight: normal;
     text-decoration: none;
     color:#ffffffaa;
+    transition: 0.25s;
+}
+.linksFooter:hover{
+    color: #fff;
+    font-size: 1.1em;
 }
