@@ -45,6 +45,10 @@
 }
 
 /* CONTEUDO 01 */
+.rowConteudo01{
+    justify-content: space-evenly;
+}
+
 .conteudo01Titulo{
     color: #fff;
     font-family: Arial;
@@ -60,10 +64,21 @@
 
 .conteinerFiltro{
     padding-top: 3em;
+    transition: 0.25s;
+}
+
+@media(max-width: 1300px) {
+    .conteinerFiltro{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
 }
 
 .conteinerCardFiltro{
-    background-color: var(--bg-dark01)
+    background-color: var(--bg-dark01);
+    min-width: 280px;
 }
 
 .optionsTitulo{
@@ -85,8 +100,22 @@
     font-size: 0.9em;
     font-weight: normal;
     text-align: left;
-    align-items: center;
     width: 100%;
+    transition: 0.25s;
+    border-radius: 0.5em;
+    padding-left: 0.5em;
+    padding-top: 0.3em;
+}
+
+.selectFiltro:hover{
+    background-color: #ffffff3a;
+}
+
+.textoBotaoRadio{
+    padding-left: 0.5em;
+    text-decoration: none;
+    color: #fff;
+    align-content: center;
 }
 
 .conteinerSubmitFiltro{
@@ -134,6 +163,7 @@
     border-radius: 2em;
     padding: 1em;
 }
+
 .imagemProduto{
     border-radius: 2em;
     width: 100%;
