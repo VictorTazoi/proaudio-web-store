@@ -64,7 +64,6 @@
 
 .conteinerFiltro{
     padding-top: 3em;
-    transition: 0.25s;
 }
 
 @media(max-width: 1300px) {

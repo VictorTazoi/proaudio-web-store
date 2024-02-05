@@ -154,11 +154,11 @@
     text-align: center;
 }
 .blocoConteudo03{
-    padding-top: 2em;
+    padding-top: 1em;
     transition: 0.1s;
 }
 .blocoConteudo03:hover{
-    padding: 0em;
+    padding-top: 0em;
 }
 
 .conteudo03Card{
@@ -176,3 +176,4 @@
     text-align: center;
     padding-top: 0.8em;
 }
+
