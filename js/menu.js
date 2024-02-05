@@ -28,7 +28,7 @@ function onClickCarrinho(){
     location = '#showCart';
 }
 
-// LISTAGEM PRODUTOS 
+// LISTAGEM DE PRODUTOS 
 const produtos = [
     {
         id: 0,
@@ -105,7 +105,7 @@ const produtos = [
 ]
 
 //LISTAGEM
-var tipoMoeda = "USD";
+var tipoMoeda = "$"; //Declara o tipo de moeda
 
 function listagemProdutos(){
     var conteinerProdutos = document.getElementById('conteinerProdutos');
@@ -116,9 +116,9 @@ function listagemProdutos(){
                 <img class="imagemProduto" src="`+val.image+`"/>
                 <p class="tituloProduto">`+val.name+`</p>
                 <p class="descricaoProduto">`+val.description+`</p>
-                <p class="precoProduto">`+val.price+` `+tipoMoeda+`</p>
+                <p class="precoProduto">`+tipoMoeda+` `+val.price+`</p>
                 <p class="estoqueProduto">Available: `+availableNow+`</p>
-                <p class="quantidadeMaximaProduto"</p> 
+                <p class="onCartProduto"></p>
                 <div class="conteinerBotaoCarrinho">
                     <button class="btn btn-outline-dark carrinhoProduto" key="`+val.id+`" href="">Add to cart</button>
                 </div>
@@ -144,6 +144,7 @@ function atualizarCarrinho(){
     produtos.map((val)=>{
         if(val.amount > 0 && val.amount <= val.available){
             val.available - 1;
+            document.getElementsByClassName('onCartProduto')[val.id].innerText = `Cart: ${val.amount}`
             conteinerCarrinho.innerHTML += `
             <div class="card mb-3 cardCarrinho">
                 <div class="row g-0">
@@ -153,16 +154,22 @@ function atualizarCarrinho(){
                     <div class="col-md-8">
                         <div class="card-body">
                         <p class="tituloCarrinho">`+val.name+`</p>
-                        <p class="precoCarrinho">Price: <strong>`+val.price+` `+tipoMoeda+`</strong></p>
+                        <p class="precoCarrinho">Price: <strong>`+tipoMoeda+` `+val.price+`</strong></p>
                         <p class="quantidadeCarrinho">Amount: <strong>`+val.amount+`un</strong></p>
+                        <p class="quantidadeCarrinho">Total: <strong>`+tipoMoeda+` `+(val.price*val.amount).toFixed(2)+`</strong></p>
                         </div>
                     </div>
                 </div>
             </div>
         `;
-        }else if(val.amount >= val.available){
-            val.amount = val.available;
-            document.getElementsByClassName('quantidadeMaximaProduto')[val.id].innerText = "No more units available!"
+        }else if(val.amount >= val.available){ //CASO O USUÁRIO SELECIONE A QUANTIDADE MÁXIMA DISPONÍVEL NO ESTOQUE:
+            val.amount = val.available; //Quantidade igual a estoque
+
+            //Retorno ao usuário de Limite excedido
+            let onCart = document.getElementsByClassName('onCartProduto')[val.id];
+            onCart.style.color = 'red';
+            onCart.innerText = `Cart: ${val.amount} | No more units available!`
+
             conteinerCarrinho.innerHTML += `
             <div class="card mb-3 cardCarrinho">
                 <div class="row g-0">
@@ -174,6 +181,7 @@ function atualizarCarrinho(){
                         <p class="tituloCarrinho">`+val.name+`</p>
                         <p class="precoCarrinho">Price: <strong>`+val.price+`</strong></p>
                         <p class="quantidadeCarrinho">Amount: <strong>`+val.amount+`un</strong></p>
+                        <p class="quantidadeCarrinho">Total: <strong>`+tipoMoeda+` `+(val.price*val.amount).toFixed(2)+`</strong></p>
                         </div>
                     </div>
                 </div>

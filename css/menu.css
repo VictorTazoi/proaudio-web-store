@@ -230,6 +230,12 @@
     color: #000;
     background-color: #fff;
 }
+.onCartProduto{
+    font-family: Arial;
+    font-size: 1em;
+    font-weight: normal;
+    text-align: center;
+}
 
 .hrDivisao{
     color: #fff;
