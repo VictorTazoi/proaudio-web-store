@@ -5,5 +5,5 @@ Por ser meu primeiro projeto usando JavaScript, há muitos erros e blocos de có
 
 # Important!
 I do not recommend reusing this project!
-The project consists of a virtual store. This brand is fictitious and was used only as an example.
+The project consists in a virtual store. This brand is fictitious and was used only as an example.
 This is my first project using JavaScript, you´ll see many errors and code blocks that could be optimized. My real intention was learning JS, that´s why there are several lines of HTML and CSS without any comments specifying their function.
