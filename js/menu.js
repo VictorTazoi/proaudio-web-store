@@ -118,7 +118,7 @@ function listagemProdutos(){
                 <p class="descricaoProduto">`+val.description+`</p>
                 <p class="precoProduto">`+tipoMoeda+` `+val.price+`</p>
                 <p class="estoqueProduto">Available: `+availableNow+`</p>
-                <p class="onCartProduto"></p>
+                <p class="onCartProduto">On cart:</p>
                 <div class="conteinerBotaoCarrinho">
                     <button class="btn btn-outline-dark carrinhoProduto" key="`+val.id+`" href="">Add to cart</button>
                 </div>
@@ -138,7 +138,7 @@ showCart.innerHTML = 'Empty Cart';
 
 //Enquanto o carrinho estiver vazio, exibe uma imagem 'Lupa'
 var conteinerCarrinho = document.getElementById('conteinerCarrinho');
-conteinerCarrinho.innerHTML = "<img src='../midia/icons/icon-empty-100.png'>"
+conteinerCarrinho.innerHTML = "..."
 
 function atualizarCarrinho(){
     //Após o carrinho receber um produto, troca a mensagem anterior pela mensagem 'Carrinho'

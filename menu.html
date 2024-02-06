@@ -43,9 +43,9 @@
             <div class="conteudo01Conteiner">
                 <div class="row rowConteudo01">
                     <div class="col-sm-2 conteinerFiltro">
+                        <p class="optionsTitulo">Options</p>
                         <div class="card conteinerCardFiltro">
                             <div class="card-body">
-                                <p class="optionsTitulo">Options</p>
                                 <hr>
                                 <span class="optionsTipoFiltro">Type</span>
                                 <br>
@@ -111,33 +111,43 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-10 conteinerCatalogo">
+                    <div class="col-sm-6 conteinerCatalogo">
                         <p class="conteudo01Titulo">Products</p>
                         <div class="listagemProdutos" id="conteinerProdutos">
                         </div>
                     </div>
-                </div>
-                <!-- CARRINHO -->
-                <div class="container" style="padding-bottom: 3em;">
-                    <div class="row conteinerCompra" id="goToCart">
-                        <div class="col-sm-6 conteinerCarrinho">
-                            <p class="conteudo01Titulo" id="showCart"></p>
-                            <div class="row">
-                                <div class="card conteinerCardCarrinho" id="conteinerCarrinho" onclick="showCart()"></div>
+                    <div class="col-sm-3 conteinerCarrinho">
+                        <p class="conteudo01ResumoTitulo">Summary</p>
+                        <div class="CardResumo">
+                            <p class="totalResumo">Total:<a id="totalResumo"></a></p>
+                            <p class="totalFrete">Delivery:<a id="totalFrete"></a></p>
+                            <hr>
+                            <p>Payment:</p>
+                            <label class="selectFiltro">
+                                <input class="botaoRadio" type="radio" id="Visa" name="paymentMethod" checked="checked">
+                                <a class="textoRadioPagamento">Visa</a>
+                            </label>
+                            <br>
+                            <label class="selectFiltro">
+                                <input class="botaoRadio" type="radio" id="Mastercard" name="paymentMethod">
+                                <a class="textoRadioPagamento">Mastercard</a>
+                            </label>
+                            <br>
+                            <label class="selectFiltro">
+                                <input class="botaoRadio" type="radio" id="PayPal" name="paymentMethod">
+                                <a class="textoRadioPagamento">PayPal</a>
+                            </label>
+                            <br>
+                            <div class="conteinerBotaoPagamento">
+                                <button class="btn btn-outline-dark BotaoPagamento">Confirm</button>
                             </div>
                         </div>
-                        <div class="col-sm-6 conteinerResumo">
-                            <p class="conteudo01ResumoTitulo">Summary</p>
-                            <div class="card card-body conteinerCardResumo">
-                                <div class="CardResumo">
-                                    <p class="totalResumo">Total:<a id="totalResumo"></a></p>
-                                    <p class="totalFrete">Delivery:<a id="totalFrete"></a></p>
-                                </div>
-                            </div>
+                        <p class="conteudo01Titulo" id="showCart"></p>
+                        <div class="row">
+                            <div class="card conteinerCardCarrinho" id="conteinerCarrinho" onclick="showCart()"></div>
                         </div>
                     </div>
                 </div>
-                <!-- carrinho -->
             </div>
         </div>
 
