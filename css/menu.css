@@ -237,13 +237,11 @@
     text-align: center;
 }
 
-.hrDivisao{
-    color: #fff;
-    width: 80%;
-    margin:auto;
-}
-
 /* CARRINHO*/
+.conteinerCompra{
+    background-color: #000;
+    border-radius: 1em;
+}
 .conteinerCarrinho{
     padding-top: 3em;
 }
@@ -251,18 +249,17 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     grid-row-gap: 2em;
     grid-column-gap: 1em;
     background-color: #00000000;
-    padding: 2em;
+    border:none;
 }
 .cardCarrinho{
-    background-color: var(--bg-dark01);
-    color: #fff;
+    background-color: #ffffffe0;
+    color: #000;
     border-radius: 2em;
-    padding: 1em;
-    width: 100%;
+    width: 40%;
 }
 .imagemCarrinho{
     border-radius: 2em;
@@ -274,23 +271,23 @@
     }
 }
 .tituloCarrinho{
-    padding-top: 1em;
-    font-family: Arial;
-    font-size: 1.3em;
+    padding-bottom: 0.5em;
+    font-family: Arial; 
+    font-size: 1.5em;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
 }
 .precoCarrinho{
     font-family: Arial;
     font-size: 1.2em;
     font-weight: normal;
-    text-align: left;
+    text-align: center;
 }
 .quantidadeCarrinho{
     font-family: Arial;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: normal;
-    text-align: left;
+    text-align: center;
 }
 .estoqueCarrinho{
     font-family: Arial;
@@ -304,6 +301,38 @@
     font-weight: normal;
     text-align: center;
     color: #f00;
+}
+
+
+.conteinerResumo{
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.conteudo01ResumoTitulo{
+    color: #fff;
+    font-family: Arial;
+    font-size: 2em;
+    text-align: center;
+}
+.conteinerCardResumo{
+    background-color: #000000;
+    border: none;
+    border-radius: 2em;
+}
+.CardResumo{
+    padding: 2em;
+}
+.totalResumo{
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #fff;
+}
+.totalFrete{
+    font-family: Arial;
+    font-weight: normal;
+    font-size: 1em;
+    color: #fff;
 }
 /* CARRINHO */
 
