@@ -33,7 +33,7 @@ const produtos = [
     {
         id: 0,
         name: 'EchoGrove Serenity',
-        description: 'Offers exceptional comfort and balanced sound quality, providing moments of tranquility, whether at home or on the go.',
+        description: '',
         amount: 0,
         price: '149.99',
         image: 'midia/headphone-03.jpg',
@@ -42,7 +42,7 @@ const produtos = [
     {
         id: 1,
         name: 'AcousticAura Pro',
-        description: 'Focused on premium sound quality, it offers a perfect balance between powerful bass and crystal-clear highs, using advanced technology and high-quality materials.',
+        description: '',
         amount: 0,
         price: '179.99',
         image: 'midia/headphone-03.jpg',
@@ -51,7 +51,7 @@ const produtos = [
     {
         id: 2,
         name: 'TempoTunes Bliss',
-        description: 'Affordable, lightweight, and comfortable headphones, providing clear and balanced sound for those seeking quality without compromising the budget.',
+        description: '',
         amount: 0,
         price: '129.99',
         image: 'midia/headphone-03.jpg',
@@ -60,7 +60,7 @@ const produtos = [
     {
         id: 3,
         name: 'HarmonyHarbor Luxe',
-        description: 'Luxurious in design and performance, these premium headphones offer high-quality finish, advanced connectivity, and an exceptional frequency response.',
+        description: '',
         amount: 0,
         price: '199.99',
         image: 'midia/headphone-03.jpg',
@@ -68,8 +68,8 @@ const produtos = [
     },
     {
         id: 4,
-        name: 'BassBeat Forge',
-        description: 'Designed for deep bass lovers, the BassBeat Forge offers an immersive audio experience with an emphasis on deeper sounds, being an affordable option.',
+        name: 'BassBeat Forge Pro',
+        description: '',
         amount: 0,
         price: '89.99',
         image: 'midia/headphone-03.jpg',
@@ -78,7 +78,7 @@ const produtos = [
     {
         id: 5,
         name: 'InfinitySound Zenith',
-        description: 'Designed for discerning audio enthusiasts, InfinitySound Zenith offers exceptional sound reproduction across all frequencies, providing an unparalleled audio experience.',
+        description: '',
         amount: 0,
         price: '169.99',
         image: 'midia/headphone-03.jpg',
@@ -87,7 +87,7 @@ const produtos = [
     {
         id: 6,
         name: 'PulseSync Horizon',
-        description: 'Provides seamless synchronization between audio and ergonomic design for an immersive musical experience, ideal for those seeking comfort and sound quality.',
+        description: '',
         amount: 0,
         price: '139.99',
         image: 'midia/headphone-03.jpg',
@@ -96,7 +96,7 @@ const produtos = [
     {
         id: 7,
         name: 'ZenSonic Precision',
-        description: 'Focused on sonic precision, ZenSonic Precision offers faithful and clear audio reproduction, being the choice for those looking for a precise auditory experience.',
+        description: '',
         amount: 0,
         price: '159.99',
         image: 'midia/headphone-03.jpg',
